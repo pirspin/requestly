@@ -1,4 +1,3 @@
-import { teamsActions } from "store/features/teams/slice";
 import { StorageService } from "init";
 import { CONSTANTS as GLOBAL_CONSTANTS } from "@requestly/requestly-core";
 import { isExtensionInstalled } from "./ExtensionActions";
@@ -34,7 +33,7 @@ export const switchWorkspace = async (
   setLoader,
   source
 ) => {
-  const { teamId, teamName, teamMembersCount, workspaceType } = newWorkspaceDetails;
+  const { teamId } = newWorkspaceDetails;
 
   let needToMergeRecords = false;
   await StorageService(appMode).waitForAllTransactions();

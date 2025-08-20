@@ -3,7 +3,6 @@ import { query } from "firebase/database";
 import { collection, getFirestore, onSnapshot, where } from "firebase/firestore";
 import { getFunctions, httpsCallable } from "firebase/functions";
 import Logger from "lib/logger";
-import { teamsActions } from "store/features/teams/slice";
 import { toast } from "utils/Toast";
 import firebaseApp from "../../firebase";
 import APP_CONSTANTS from "config/constants";

@@ -4,7 +4,7 @@ import getReducerWithLocalStorageSync from "store/getReducerWithLocalStorageSync
 import { WorkspaceType } from "types";
 
 const initialState = {
-  availableTeams: null,
+  availableTeams: [],
   currentlyActiveWorkspace: {
     id: null,
     name: null,

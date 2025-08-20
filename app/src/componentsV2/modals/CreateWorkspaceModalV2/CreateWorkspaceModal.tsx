@@ -164,7 +164,7 @@ export const CreateWorkspaceModalV2: React.FC<Props> = ({ isOpen, toggleModal, c
             workspaceType: WorkspaceType.LOCAL,
             rootPath: partialWorkspace.path,
           };
-          dispatch(teamsActions.addToAvailableTeams(localWorkspace));
+          // dispatch(teamsActions.addToAvailableTeams(localWorkspace));
           dispatch(workspaceActions.upsertWorkspace(localWorkspace));
           return partialWorkspace.id;
         } else {

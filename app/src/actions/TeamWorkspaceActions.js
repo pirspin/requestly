@@ -97,18 +97,18 @@ export const switchWorkspace = async (
   if (teamId === null) {
     // We are switching to pvt workspace
     // Clear team members info
-    dispatch(teamsActions.setCurrentlyActiveWorkspaceMembers({}));
+    // dispatch(teamsActions.setCurrentlyActiveWorkspaceMembers({}));
     dispatch(workspaceActions.setActiveWorkspacesMembers({}));
   }
 
-  dispatch(
-    teamsActions.setCurrentlyActiveWorkspace({
-      id: teamId,
-      name: teamName,
-      membersCount: teamMembersCount,
-      workspaceType: workspaceType,
-    })
-  );
+  // dispatch(
+  //   teamsActions.setCurrentlyActiveWorkspace({
+  //     id: teamId,
+  //     name: teamName,
+  //     membersCount: teamMembersCount,
+  //     workspaceType: workspaceType,
+  //   })
+  // );
   dispatch(workspaceActions.setActiveWorkspaceIds(teamId ? [teamId] : []));
 
   //Refresh Rules List

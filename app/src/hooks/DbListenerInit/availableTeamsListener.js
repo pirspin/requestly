@@ -113,14 +113,14 @@ const availableTeamsListener = (dispatch, uid, activeWorkspaceId, appMode, isLoc
         } else {
           // Incase team name, members, or anything has changed
           // No need
-          dispatch(
-            teamsActions.setCurrentlyActiveWorkspace({
-              id: found.id,
-              name: found.name,
-              membersCount: found.accessCount,
-              workspaceType: found.workspaceType,
-            })
-          );
+          // dispatch(
+          //   teamsActions.setCurrentlyActiveWorkspace({
+          //     id: found.id,
+          //     name: found.name,
+          //     membersCount: found.accessCount,
+          //     workspaceType: found.workspaceType,
+          //   })
+          // );
 
           // Update details of all team members
           const functions = getFunctions();
